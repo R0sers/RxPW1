@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tugas Praktikum PW1 P3</title>
+  <link rel="stylesheet" href="Tugas_Prak_P3_PW1_Robi_Septiandi2.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <img src="ROXE (1080 x 1080 px).png" alt="Logo Roxe" style="width: 100px;">
+      <nav class="nav">
+        <a href="Tugas_Prak_P3_PW1_Robi_Septiandi.html">Beranda</a>
+        <a href="Tugas_Prak_P3_PW1_Robi_Septiandi2.html" class="active">Roxe</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Selamat datang!</h2>
+          <p>Ini merupakan halaman lebih dalam untuk tahu si Roxe</p>
+          <a class="btn" href="#about">Lihat Karya Saya</a>
+        </div>
+
+        <div class="hero-card">
+          <img src="ROXE (1080 x 1080 px) Black.png" style="width: 100px;" alt="Preview Card" />
+          <h3>ROXE ITU APA??!!</h3>
+          <p>Roxe itu asalnya "Rose", dan Rose merupakan akronim dari Robi Septiandi</p>
+        </div>
+      </div>
+    </section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- About / Portfolio Section -->
+    <section id="about" class="container about">
+      <h2>Hal Yang Disukai Roxe</h2>
+
+      <div class="grid">
+        <article class="box">
+          <img src="Baca.png" alt="Proyek 1" style="border-radius:8px; width:100%;">
+          <h4>Baca Buku</h4>
+          <p>Bukan hobby sih, cuman suka aja</p>
+          <p style="font-style: italic;">"Bodoh saja tidak punya, apalagi merasa pintar"</p>
+        </article>
+
+        <article class="box">
+          <img src="Editing.png" alt="Proyek 2" style="border-radius:8px; width:100%;">
+          <h4>Editing & Hiking</h4>
+          <p>Bukan abang-abangan gunung</p>
+          <p>Cuman suka aja editing apalagi yang dieditnya pas travelling</p>
+        </article>
+
+        <article class="box">
+          <img src="atychiphobia.png" alt="Proyek 3" style="border-radius:8px; width:100%;">
+          <h4>Atychiphobia</h4>
+          <p>Si Roxe ini juga nge klaim sendiri kalau dia Atychiphobia</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> 2025 Roxe</p>
+    </div>
+  </footer>
+
+  <script>
+    // otomatis isi tahun sekarang
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

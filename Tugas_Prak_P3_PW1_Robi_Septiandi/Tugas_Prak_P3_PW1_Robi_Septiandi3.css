@@ -1,0 +1,93 @@
+:root {
+font-family: var(--ff);
+background: linear-gradient(180deg, var(--bg), #eef2ff);
+color: #111827;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+padding: 36px 18px;
+display: flex;
+justify-content: center;
+}
+
+
+.container {
+width: 100%;
+max-width: var(--maxw);
+display: grid;
+grid-template-columns: 1fr 320px;
+gap: var(--gap);
+align-items: start;
+}
+
+
+header {
+grid-column: 1 / -1;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 6px;
+}
+
+
+.brand { display: flex; gap: 12px; align-items: center; }
+.logo {
+width: 44px; height: 44px; border-radius: 8px;
+background: linear-gradient(135deg, var(--accent), #9b8cff);
+display: flex; align-items: center; justify-content: center;
+color: white; font-weight: 700;
+}
+h1 { font-size: 18px; margin: 0; }
+p.lead { margin: 0; color: var(--muted); font-size: 13px; }
+
+
+.hero {
+background: var(--card);
+border-radius: var(--radius);
+padding: 20px;
+box-shadow: 0 6px 18px rgba(99,102,241,0.08);
+}
+.hero h2 { margin: 0 0 8px 0; }
+.hero p { margin: 0; color: var(--muted); }
+.actions { margin-top: 14px; display: flex; gap: 10px; }
+.btn { padding: 10px 14px; border-radius: 8px; border: 0; cursor: pointer; font-weight: 600; }
+.btn-primary { background: var(--accent); color: white; }
+.btn-ghost { background: transparent; border: 1px solid #e6e9ff; color: var(--accent); }
+
+
+.cards {
+margin-top: var(--gap);
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 12px;
+}
+.card {
+background: var(--card);
+padding: 14px; border-radius: 12px;
+box-shadow: 0 6px 14px rgba(15,23,42,0.04);
+}
+.card h3 { margin: 0 0 6px 0; }
+.card p { margin: 0; color: var(--muted); font-size: 14px; }
+
+
+aside {
+background: var(--card);
+border-radius: var(--radius);
+padding: 14px;
+height: fit-content;
+box-shadow: 0 6px 14px rgba(15,23,42,0.04);
+}
+.meta-row { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+.tag { display: inline-block; padding: 6px 8px; border-radius: 999px; background: #f3f4ff; font-weight: 600; font-size: 12px; }
+
+
+footer { grid-column: 1 / -1; margin-top: 18px; text-align: center; color: var(--muted); font-size: 13px; }
+
+
+@media (max-width: 900px) {
+.container { grid-template-columns: 1fr; }
+.cards { grid-template-columns: 1fr; }
+}
+
+
+.muted { color: var(--muted); }
+.small { font-size: 13px; }

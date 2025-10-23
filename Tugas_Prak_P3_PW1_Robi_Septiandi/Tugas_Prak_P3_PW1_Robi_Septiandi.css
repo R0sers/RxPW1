@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+
+header {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00b4d8;
+  padding: 10px 20px;
+}
+
+nav .logo {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+}
+
+nav .menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+nav .menu a:hover,
+nav .menu a.active {
+  background-color: #0077b6;
+  border-radius: 5px;
+}
+
+/* Layout utama (section) */
+section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+article, aside {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+article {
+  background-color: #caf0f8;
+}
+
+aside {
+  background-color: #e0fbfc;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #0077b6;
+  color: white;
+  font-weight: bold;
+}
