@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heading</title>
+</head>
+        <body>
+            
+            <h2><p style="text-align: center;">Absensi Mahasiswa Teknik Informatika</p></h2>
+            <br>
+
+            <table border="1px solid black">
+                <tr>
+                    <th rowspan="3">No</th>
+                    <th rowspan="3">NPM</th>
+                    <th rowspan="3">Nama</th>
+                    <th colspan="7">Pertemuan</th>
+
+
+                </tr>
+
+                <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+
+                </tr>
+
+                    <tr>
+                        <th>9-Feb</th>
+                        <th>16-Feb</th>
+                        <th>24-Feb</th>
+                        <th>2-Mar</th>
+                        <th>9-Mar</th>
+                        <th>16-Mar</th>
+                        <th>23-Mar</th>
+                    </tr>
+
+                </tr>
+
+                <tr>
+                    <th>1</th>
+                    <th>1111111111</th>
+                    <th>Nyjah Huston</th>
+                    <th>v</th><th><th><th><th><th><th></th></th></th></th></th></th>
+                </tr>
+
+                
+                <tr>
+                    <th>1</th>
+                    <th>2222222222</th>
+                    <th>Luan Olivera</th>
+                    <th>v</th><th><th><th><th><th><th></th></th></th></th></th></th>
+                </tr>
+
+                
+                <tr>
+                    <th>1</th>
+                    <th>3333333333</th>
+                    <th>Yuto Horigome</th>
+                    <th>v</th><th><th><th><th><th><th></th></th></th></th></th></th>
+                    
+                </tr>
+            </table>
+            <br><br>
+
+        <h2>Form Mahasiswa</h2>
+    <fieldset>
+    <legend>Data Mahasiswa</legend>
+    <table>
+
+        <tr>
+            <td><label for="nama">Nama:</label></td>
+            <td><input  id="nama" name="nama" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="npm">NPM:</label></td>
+            <td><input type="text" id="npm" name="npm" required></td>
+        </tr>
+
+        <tr>
+                <td>Kelas:</td>
+                <td>
+                        <select id="kelas" name="kelas" required>
+                        <option value="">-</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                </td>
+                        
+        </tr>
+    </table>
+
+        <tr>
+            <td>Jenis Kelamin:</td>
+                <td>
+                    <input type="radio" id="laki" name="jk" value="Laki-laki" required>
+                    <label for="laki">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jk" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </td>
+        </tr> 
+    </fieldset>
+
+    <br>
+    <fieldset>
+    <legend>Tempat Tinggal Mahasiswa</legend>
+    <table>
+
+        <tr>
+            <td><label for="alamat">Alamat</label></td>
+            <td><textarea id="alamat" name="alamat" rows="3" cols="25" required></textarea></td>
+        </tr>
+
+        <tr>
+            <td><label for="Kecamatan">Kecamatan</label></td>
+            <td>:<input type="text" id="Kecamatan" name="Kecamatan" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="Kab">Kabupaten/Kotamadya</label></td>
+            <td>:<input type="text" id="Kab" name="Kab" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="Prov">Provinsi</label></td>
+            <td>:<input type="text" id="Prov" name="Prov" required></td>
+        </tr>
+
+        <tr>
+            <td><label for="pos">KodePos</label></td>
+            <td>:<input type="text" id="Pos" name="Pos" required></td>
+        </tr>
+
+    </table>
+    </fieldset>
+        <br>
+
+    <fieldset>
+    <legend>Lain-Lainnya</legend>
+    <table>
+
+    <tr>
+        <td>Bahasa Pemrograman:</td>
+        <td>
+            <input type="checkbox" id="c" name="c" value="c">
+            <label for="c">C/C++</label>
+
+            <input type="checkbox" id="gl" name="gl" value="gl">
+            <label for="gl">Go Lang</label>
+
+            <input type="checkbox" id="py" name="py" value="py">
+            <label for="py">Python</label>
+
+            <input type="checkbox" id="lain" name="lain" value="lain">
+            <label for="lain">Lainnya</label> <br>
+
+            <input type="checkbox" id="php" name="php" value="php">
+            <label for="php">PHP</label>
+
+            <input type="checkbox" id="js" name="js" value="js">
+            <label for="js">Java Script</label>
+
+            <input type="checkbox" id="rb" name="rb" value="rb">
+            <label for="rb">Ruby</label>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td>Kegiatan:</td>
+        <td>
+            <input type="checkbox" id="ok" name="ok" value="ok">
+            <label for="ok">Organisasi Kemahasiswaan</label>
+
+            <input type="checkbox" id="bo" name="bo" value="bo">
+            <label for="bo">Bidang Olahraga</label>
+
+            <input type="checkbox" id="lain" name="lain" value="lain">
+            <label for="lain">Lainnya</label> <br>
+
+            <input type="checkbox" id="ol" name="ol" value="ol">
+            <label for="ol">Organisasi Di Luar Kampus</label>
+
+            <input type="checkbox" id="s" name="s" value="s">
+            <label for="s">Bidang Seni</label>
+
+        </td>
+    </tr>
+
+    </table>
+    </fieldset>
+    <br>
+
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+        
+
+        </body>
+</html>
